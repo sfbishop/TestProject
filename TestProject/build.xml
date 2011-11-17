@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project name="TestProject" basedir="." default="compile">
 <property name="src" value="./src" />
+<property name="test" value="./test" />
 <property name="lib" value="./lib" />
-<property name="classes" value="./bin" />
+<property name="classes" value="./build/classes" />
 <property name="test.class.name" value="com.sb.TestSomething" />
 <property name="build" location="build/classes" />
 <property name="dist" location="dist" />
@@ -21,6 +22,9 @@
 
 <target name="test-html"  description="Run tests and generate html reports"> 
 	<mkdir dir="${test.data.dir}/tmp/rawtestoutput"/>
+	<javac srcdir="${test}" destdir="${build}"  includeantruntime="false">
+		<classpath refid="test.classpath" />
+	</javac>
 	<junitreport todir="${test.data.dir}/tmp">
 		<fileset dir="${test.data.dir}">
 			<include name="TEST-*.xml" />
@@ -49,6 +53,7 @@
 <target name="compile" depends="init" description="compile the source ">
 	<!-- Compile the java code from ${src} into ${build} -->
 	<javac srcdir="${src}" destdir="${build}"  includeantruntime="false"/>
+	
 	<jar destfile="dist/TestProject.jar" basedir="build/classes" />
 	<antcall target="test-html" />
 </target>
