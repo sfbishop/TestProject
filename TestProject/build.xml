@@ -9,7 +9,9 @@
 <property name="dist" location="dist" />
 <property name="test.data.dir" location="build/testreports" />
 <property name="webroot.src" value="./WebContent"/>
+<property name="webroot.src.web-inf" value="./WebContent/WEB-INF"/>
 <property name="war.file.name" value="TestProject.war" />
+
 	
 <path id="test.classpath">
 	<pathelement location="${classes}" />
@@ -28,17 +30,18 @@
 	<junitreport todir="${test.data.dir}/tmp">
 		<fileset dir="${test.data.dir}">
 			<include name="TEST-*.xml" />
-			</fileset>
-			<report todir="${test.data.dir}/test-reports"/>
+		</fileset>
+		<report todir="${test.data.dir}/test-reports"/>
 	</junitreport>
 	<junit printsummary="true" fork="yes" haltonfailure="yes">
+		<classpath refid="test.classpath" />
 		<batchtest fork="yes" todir="${test.data.dir}" >
 	      <fileset dir="${classes}">
 	        <include name="**/Test*.class" />
 	      </fileset>
 	    </batchtest>
 		<formatter type="xml" />
-		<classpath refid="test.classpath" />
+		
 	</junit>
 </target>
 
@@ -52,8 +55,9 @@
 
 <target name="compile" depends="init" description="compile the source ">
 	<!-- Compile the java code from ${src} into ${build} -->
-	<javac srcdir="${src}" destdir="${build}"  includeantruntime="false"/>
-	
+	<javac srcdir="${src}" destdir="${build}"  includeantruntime="false">
+		<classpath refid="test.classpath" />
+	</javac>
 	<jar destfile="dist/TestProject.jar" basedir="build/classes" />
 	<antcall target="test-html" />
 </target>
@@ -86,4 +90,22 @@ Clean up the directories
 	<delete dir="${test.data.dir}" /> 
 </target>
 	
+<target name="versionInfo" >
+		<propertyfile file="version.properties" comment="Build version info">
+	          <entry key="buildDate" type="date" value="now"/>
+	          <entry key="buildNum" default="0" type="int" operation="+" value="1"/>
+	     </propertyfile>
+		<copy file="${webroot.src.web-inf}/template/version.jsp" tofile="${webroot.src}/version.jsp" overwrite="true" />
+	 	<replace
+	 			file="${webroot.src}/version.jsp"
+	            value="value not found in version.properties"
+	            propertyFile="version.properties">
+	            <replacefilter
+	                token="@buildDate@"
+	                property="buildDate"/>
+	            <replacefilter
+	                token="@buildNum@"
+	                property="buildNum"/>
+	     </replace>
+</target>
 </project>

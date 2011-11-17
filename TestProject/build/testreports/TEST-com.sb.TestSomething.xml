@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="peipc1781" name="com.sb.TestSomething" tests="1" time="0.046" timestamp="2011-11-17T18:50:29">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/C:/dev/eclipse-jee-indigo-SR1-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="test.data.dir" value="C:\dev\stevenb\git\TestProject\TestProject\build\testreports" />
+    <property name="dist" value="C:\dev\stevenb\git\TestProject\TestProject\dist" />
+    <property name="lib" value="./lib" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="C:\Sun\Java\jdk1.6.0_11\jre\lib\resources.jar;C:\Sun\Java\jdk1.6.0_11\jre\lib\rt.jar;C:\Sun\Java\jdk1.6.0_11\jre\lib\sunrsasign.jar;C:\Sun\Java\jdk1.6.0_11\jre\lib\jsse.jar;C:\Sun\Java\jdk1.6.0_11\jre\lib\jce.jar;C:\Sun\Java\jdk1.6.0_11\jre\lib\charsets.jar;C:\Sun\Java\jdk1.6.0_11\jre\classes" />
+    <property name="TODAY" value="November 17 2011" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300" />
+    <property name="java.runtime.version" value="1.6.0_11-b03" />
+    <property name="user.name" value="stevenb" />
+    <property name="user.language" value="en" />
+    <property name="build" value="C:\dev\stevenb\git\TestProject\TestProject\build\classes" />
+    <property name="sun.boot.library.path" value="C:\Sun\Java\jdk1.6.0_11\jre\bin" />
+    <property name="ant.project.default-target" value="compile" />
+    <property name="ant.project.name" value="TestProject" />
+    <property name="DSTAMP" value="20111117" />
+    <property name="java.version" value="1.6.0_11" />
+    <property name="classes" value="./build/classes" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Sun\Java\jdk1.6.0_11\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="src" value="./src" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Sun\Java\jdk1.6.0_11\jre" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="C:\dev\stevenb\git\TestProject\TestProject\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="test.class.name" value="com.sb.TestSomething" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="11.0-b16" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="webroot.src.web-inf" value="./WebContent/WEB-INF" />
+    <property name="eclipse.pdebuild.scripts" value="/C:/dev/eclipse-jee-indigo-SR1-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="user.home" value="C:\Documents and Settings\stevenb" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="test" value="./test" />
+    <property name="java.library.path" value="C:\Sun\Java\jdk1.6.0_11\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Sun/Java/jdk1.6.0_11/bin/../jre/bin/client;C:/Sun/Java/jdk1.6.0_11/bin/../jre/bin;C:/Sun/Java/jdk1.6.0_11/bin/../jre/lib/i386;C:\dev\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Sun\Java\jdk1.6.0_11\bin;C:\Sun\SDK\jdk\bin;C:\phpdev\Perl\site\bin;C:\phpdev\Perl\bin;c:\ruby\bin;C:\RAD70_Shared\plugins\org.eclipse.hyades.execution.win32.x86_4.2.3.v200701141614;C:\phpdev\PHP\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\phpdev\MySQL\MySQL Server 5.0\bin;C:\phpdev\PHP;C:\Program Files\Utimaco\SafeGuard Enterprise\SSO\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Windows Imaging\;C:\dev\jEdit;C:\dev\apache-ant-1.8.2\bin;C:\dev\apache-maven-3.0.3\bin;C:\dev\TortoiseSVN\bin;C:\dev\eclipse-jee-indigo-SR1-win32\eclipse;" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="C:\dev\stevenb\git\TestProject\TestProject\build\classes;C:\dev\stevenb\git\TestProject\TestProject\lib\junit.jar;C:\dev\stevenb\git\TestProject\TestProject\lib\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\dev\stevenb\git\TestProject\TestProject;C:\Program Files\Business Objects\JRE\lib\ext\QTJava.zip;C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar;C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar;C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar;C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="TSTAMP" value="1450" />
+    <property name="ant.file.TestProject" value="C:\dev\stevenb\git\TestProject\TestProject\build.xml" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 3" />
+    <property name="eclipse.pdebuild.home" value="/C:/dev/eclipse-jee-indigo-SR1-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\stevenb\LOCALS~1\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="webroot.src" value="./WebContent" />
+    <property name="os.arch" value="x86" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="ant.file.type.TestProject" value="file" />
+    <property name="java.ext.dirs" value="C:\Sun\Java\jdk1.6.0_11\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\dev\stevenb\git\TestProject\TestProject" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="C:\DOCUME~1\stevenb\LOCALS~1\Temp\null1037682592" />
+    <property name="basedir" value="C:\dev\stevenb\git\TestProject\TestProject" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="C:\dev\eclipse-jee-indigo-SR1-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="test-html" />
+    <property name="war.file.name" value="TestProject.war" />
+  </properties>
+  <testcase classname="com.sb.TestSomething" name="testDoSomething" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
