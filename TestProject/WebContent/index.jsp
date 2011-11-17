@@ -9,6 +9,7 @@
 <body>
 Welcome to the TestProject
 
+<hr>
 Build Details:
 <jsp:include page="version.jsp"></jsp:include>
 </body>
