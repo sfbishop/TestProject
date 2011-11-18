@@ -60,6 +60,7 @@
 	</javac>
 	<jar destfile="dist/TestProject.jar" basedir="build/classes" />
 	<antcall target="test-html" />
+	<antcall target="versionInfo" />
 </target>
 
 <target name="dist" depends="compile" description="generate the distribution jar file">
