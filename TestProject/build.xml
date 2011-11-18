@@ -101,10 +101,10 @@ Clean up the directories
 	            value="value not found in version.properties"
 	            propertyFile="version.properties">
 	            <replacefilter
-	                token="@buildDate@"
+	                token="@BUILD_DATE@"
 	                property="buildDate"/>
 	            <replacefilter
-	                token="@buildNum@"
+	                token="@BUILD_NUM@"
 	                property="buildNum"/>
 	     </replace>
 </target>

@@ -1,2 +1,2 @@
-<b>buildDate:@buildDate@</b> (AST)
-<b>buildNum:@buildNum@</b>
+<b>buildDate:@BUILD_DATE@</b> (AST)
+<b>buildNum:@BUILD_NUM@</b>

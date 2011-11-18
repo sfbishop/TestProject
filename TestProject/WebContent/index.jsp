@@ -7,7 +7,8 @@
 <title>TestProject</title>
 </head>
 <body>
-Welcome to the TestProject
+
+Welcome to the TestProject <%= new java.util.Date() %>
 
 <hr>
 Build Details:
