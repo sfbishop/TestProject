@@ -60,9 +60,8 @@
 	</javac>
 	<jar destfile="dist/TestProject.jar" basedir="build/classes" />
 	<antcall target="test-html" />
-	<antcall target="versionInfo" />
+	<antcall target="version" />
 </target>
-
 <target name="dist" depends="compile" description="generate the distribution jar file">
 	<!-- Create the distribution directory -->
 	<mkdir dir="${dist}" />
@@ -91,7 +90,7 @@ Clean up the directories
 	<delete dir="${test.data.dir}" /> 
 </target>
 	
-<target name="versionInfo" >
+<target name="version" description="version date and num">
 		<propertyfile file="version.properties" comment="Build version info">
 	          <entry key="buildDate" type="date" value="now"/>
 	          <entry key="buildNum" default="0" type="int" operation="+" value="1"/>
