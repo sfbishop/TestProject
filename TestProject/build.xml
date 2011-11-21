@@ -58,8 +58,10 @@
 	<javac srcdir="${src}" destdir="${build}"  includeantruntime="false">
 		<classpath refid="test.classpath" />
 	</javac>
+	<antcall target="version" />
 	<jar destfile="dist/TestProject.jar" basedir="build/classes" />
 	<antcall target="test-html" />
+	<antcall target="war" />
 </target>
 <target name="dist" depends="compile" description="generate the distribution jar file">
 	<!-- Create the distribution directory -->
@@ -67,8 +69,8 @@
 	<!-- Put everything in ${build} into the TestProject-${DSTAMP}.jar file -->
 	<jar jarfile="${dist}/TestProject-${DSTAMP}.jar" basedir="${build}" />
 </target>
-<target name="war" depends="compile" description="compile class and create war file">
-	<antcall target="version" />
+<target name="war"  description="compile class and create war file">
+	
 	<war destfile="${dist}/${war.file.name}" webxml="WebContent/WEB-INF/web.xml">
         <lib dir="${lib}">
             <include name="*.jar"/>
@@ -76,7 +78,6 @@
 		<classes dir="${classes}"/>
 		<fileset dir="WebContent"/>
 		<lib dir="WebContent/WEB-INF/lib"/>
-		
 	</war>
 	<echo>Copyied war : ${dist}${war.file.name}...</echo>
 </target>
