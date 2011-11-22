@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestSomething {
+	private static final int _EXPECTED_NUMBER = 5;
 	Something abstractSomething = null;
 	
 	@Before
@@ -20,7 +21,7 @@ public class TestSomething {
 
 	@Test
 	public void testDoSomething() {
-		assertTrue(abstractSomething.doSomething() == 4);
+		assertTrue(abstractSomething.doSomething() == _EXPECTED_NUMBER);
 	}
 
 }
