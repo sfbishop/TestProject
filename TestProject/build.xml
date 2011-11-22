@@ -33,7 +33,7 @@
 		</fileset>
 		<report todir="${test.data.dir}/test-reports"/>
 	</junitreport>
-	<junit printsummary="true" fork="yes" haltonfailure="yes">
+	<junit printsummary="true" fork="yes" haltonfailure="no">
 		<classpath refid="test.classpath" />
 		<batchtest fork="yes" todir="${test.data.dir}" >
 	      <fileset dir="${classes}">

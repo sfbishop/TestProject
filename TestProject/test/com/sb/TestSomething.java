@@ -20,7 +20,7 @@ public class TestSomething {
 
 	@Test
 	public void testDoSomething() {
-		assertTrue(abstractSomething.doSomething() == 5);
+		assertTrue(abstractSomething.doSomething() == 4);
 	}
 
 }
