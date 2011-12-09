@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestSomething {
-	private static final int _EXPECTED_NUMBER = 4;
+	private static final int _EXPECTED_NUMBER = 5;
 	Something abstractSomething = null;
 	
 	@Before
